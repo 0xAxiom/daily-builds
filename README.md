@@ -12,6 +12,7 @@ Production-quality tools built 4x daily. Every build must meet a high bar:
 
 | Build | Description | Stack | Date |
 |-------|-------------|-------|------|
+| [pr-review-stream](./builds/2026-02-03-pr-review-stream/) | Streaming AI code review pipeline. GitHub webhook → smart model routing → incremental review comments. Uses local LLMs (qwq, gemma3, deepseek). | Node.js, Hono, Ollama, Octokit | 2026-02-03 |
 | [gasflow](./builds/2026-02-03-gasflow/) | Predictive multi-chain gas optimizer. Aggregates gas across 4 chains, predicts optimal timing, route optimization for cost savings. | Node.js, Express, viem, React, Recharts, SQLite | 2026-02-03 |
 | [agent-pulse](./builds/2026-02-03-agent-pulse/) | Real-time AI agent activity monitor for Base. Track what agents do on-chain, categorize transactions, live WebSocket feed, beautiful dashboard. | Node.js, Express, WebSocket, React, viem | 2026-02-03 |
 | [treasury-nerve-center](./builds/2026-02-02-treasury-nerve-center/) | Unified intelligence layer for AI agent treasuries. One command → portfolio value, position health, gas recommendations, suggested actions. | Node.js, viem, CoinGecko, The Graph | 2026-02-02 |
