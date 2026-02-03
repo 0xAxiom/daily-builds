@@ -1,5 +1,5 @@
 import { createPublicClient, http, formatGwei } from 'viem';
-import { base, arbitrum, polygon, optimism } from 'viem/chains';
+import { mainnet, base, arbitrum, polygon, optimism } from 'viem/chains';
 import { GasSnapshot, CHAINS, Chain } from './types';
 import { GasDatabase } from './database';
 
@@ -16,6 +16,7 @@ export class GasCollector {
   private initClients() {
     // Initialize viem clients for each chain
     const chainConfigs = {
+      [mainnet.id]: mainnet,
       [base.id]: base,
       [arbitrum.id]: arbitrum, 
       [polygon.id]: polygon,
@@ -42,14 +43,23 @@ export class GasCollector {
 
     try {
       // Get latest block and gas info
-      const [block, feeHistory, pendingBlock] = await Promise.all([
+      const [block, feeHistory] = await Promise.all([
         client.getBlock({ blockTag: 'latest' }),
         client.getFeeHistory({
           blockCount: 1,
           rewardPercentiles: [50], // median priority fee
-        }),
-        client.getBlockTransactionCount({ blockTag: 'pending' })
+        })
       ]);
+
+      // Try to get pending tx count (some RPCs don't support this)
+      let pendingTxCount = 0;
+      try {
+        const pending = await client.getBlockTransactionCount({ blockTag: 'pending' });
+        pendingTxCount = Number(pending);
+      } catch {
+        // Fallback: use latest block tx count as approximation
+        pendingTxCount = block.transactions?.length || 0;
+      }
 
       // Calculate base fee and priority fee
       const baseFee = block.baseFeePerGas || 0n;
@@ -60,14 +70,14 @@ export class GasCollector {
         timestamp: Date.now(),
         baseFee,
         priorityFee,
-        pendingTxCount: Number(pendingBlock),
+        pendingTxCount,
         blockNumber: Number(block.number)
       };
 
       // Store in database
       this.db.insertGasSnapshot(snapshot);
 
-      console.log(`[${CHAINS[chainId].name}] Block ${block.number}: Base ${formatGwei(baseFee)} + Priority ${formatGwei(priorityFee)} gwei | Pending: ${pendingBlock}`);
+      console.log(`[${CHAINS[chainId].name}] Block ${block.number}: Base ${formatGwei(baseFee)} + Priority ${formatGwei(priorityFee)} gwei | Pending: ${pendingTxCount}`);
 
       return snapshot;
     } catch (error) {

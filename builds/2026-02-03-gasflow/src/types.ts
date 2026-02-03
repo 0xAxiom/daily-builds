@@ -41,6 +41,12 @@ export interface RouteComparison {
 }
 
 export const CHAINS: Record<number, Chain> = {
+  1: {
+    id: 1,
+    name: 'Ethereum',
+    rpcUrl: 'https://eth.llamarpc.com',
+    symbol: 'ETH'
+  },
   8453: {
     id: 8453,
     name: 'Base',
