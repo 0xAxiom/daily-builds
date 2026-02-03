@@ -12,8 +12,8 @@ Production-quality tools built 4x daily. Every build must meet a high bar:
 
 | Build | Description | Stack | Date |
 |-------|-------------|-------|------|
-| [github-pulse](./builds/2026-02-02-github-pulse/) | Real-time GitHub activity dashboard for multiple repos. Live SSE updates, commit velocity charts, PR/issue tracking. | Node.js, Express, Octokit, Chart.js | 2026-02-02 |
 | [treasury-nerve-center](./builds/2026-02-02-treasury-nerve-center/) | Unified intelligence layer for AI agent treasuries. One command → portfolio value, position health, gas recommendations, suggested actions. | Node.js, viem, CoinGecko, The Graph | 2026-02-02 |
+| [github-pulse](./builds/2026-02-02-github-pulse/) | Real-time GitHub activity dashboard. Live SSE updates, commit velocity charts, PR/issue tracking, webhook support. | Node.js, Express, Octokit, Chart.js | 2026-02-02 |
 
 ## Process
 
