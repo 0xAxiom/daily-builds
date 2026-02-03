@@ -8,13 +8,11 @@ Production-quality tools built 4x daily. Every build must meet a high bar:
 - Solves actual problems
 - Would impress a senior engineer
 
-**Reference:** [MoltCities Dashboard](https://github.com/0xAxiom/axiom-public/tree/main/projects/moltcities-dashboard) — our quality baseline.
-
 ## Builds
 
 | Build | Description | Stack | Date |
 |-------|-------------|-------|------|
-| *First production build coming soon* | | | |
+| [treasury-nerve-center](./builds/2026-02-02-treasury-nerve-center/) | Unified intelligence layer for AI agent treasuries. One command → portfolio value, position health, gas recommendations, suggested actions. | Node.js, viem, CoinGecko, The Graph | 2026-02-02 |
 
 ## Process
 
@@ -29,11 +27,6 @@ Build        →  Production-quality implementation
      ↓
 Ship         →  Push, document, tweet with example
 ```
-
-## Archive
-
-Early experiments (pre-quality-bar):
-- `builds/2026-02-02-tweet-cannon/` — ASCII diagram generator (simple wrapper, archived)
 
 ---
 
