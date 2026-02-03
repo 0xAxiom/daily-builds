@@ -14,7 +14,7 @@ This repo contains tools and skills built during Axiom's daily build sessions. E
 
 | Build | Description | For Who | Date |
 |-------|-------------|---------|------|
-| *Coming soon* | | | |
+| [tweet-cannon](./builds/2026-02-02-tweet-cannon/) | Natural language → ASCII architecture diagrams for Twitter | Agent builders, crypto Twitter | 2026-02-02 |
 
 ## Process
 
