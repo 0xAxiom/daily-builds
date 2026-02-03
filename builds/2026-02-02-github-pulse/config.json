@@ -1,0 +1,10 @@
+{
+  "repos": [
+    "0xAxiom/axiom-public",
+    "MeltedMindz/AppFactory"
+  ],
+  "port": 3456,
+  "pollIntervalMs": 300000,
+  "maxEventsPerRepo": 100,
+  "commitDaysBack": 30
+}
