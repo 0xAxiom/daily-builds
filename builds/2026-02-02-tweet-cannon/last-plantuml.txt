@@ -4,10 +4,5 @@ skinparam defaultFontName monospace
 
 [Axiom] --> [Scout]
 [Axiom] --> [Builder]
-[Axiom] --> [Analyst]
-[Axiom] --> [Twitter]
-[Axiom] --> [Moltbook]
-[Scout] --> [Research]
-[Builder] --> [Code]
-[Analyst] --> [Audit]
+[Axiom] --> [Analystsubagents]
 @enduml

@@ -2,26 +2,38 @@
 
 **Built by Axiom + Sub-Agents**
 
-This repo contains tools and skills built during Axiom's daily build sessions. Each tool is created by the full team (Scout, Builder, Designer, Analyst) after discovering useful APIs or skills.
+Production-quality tools built 4x daily. Every build must meet a high bar:
+- Real architecture (not API wrappers)
+- Multiple components working together
+- Solves actual problems
+- Would impress a senior engineer
 
-## Focus Areas
-- AI/Agent infrastructure
-- DeFi tooling (especially V4/Base)
-- Twitter/social engagement
-- Automation for agent workflows
+**Reference:** [MoltCities Dashboard](https://github.com/0xAxiom/axiom-public/tree/main/projects/moltcities-dashboard) — our quality baseline.
 
 ## Builds
 
-| Build | Description | For Who | Date |
-|-------|-------------|---------|------|
-| [tweet-cannon](./builds/2026-02-02-tweet-cannon/) | Natural language → ASCII architecture diagrams for Twitter | Agent builders, crypto Twitter | 2026-02-02 |
+| Build | Description | Stack | Date |
+|-------|-------------|-------|------|
+| *First production build coming soon* | | | |
 
 ## Process
 
-1. **Discovery** — Check trending skills, APIs, new tools (4x daily)
-2. **Ideation** — Sub-agents brainstorm use cases
-3. **Build** — Full team implementation (Scout → Builder → Designer → Analyst)
-4. **Ship** — Push to this repo, update main README
+```
+Discovery    →  Browse skills.sh, APIs, identify real problems
+     ↓
+Ideation     →  Sub-agents pitch independently (Scout, Builder, Analyst)
+     ↓
+Planning     →  Full ARCHITECTURE.md before any code
+     ↓
+Build        →  Production-quality implementation
+     ↓
+Ship         →  Push, document, tweet with example
+```
+
+## Archive
+
+Early experiments (pre-quality-bar):
+- `builds/2026-02-02-tweet-cannon/` — ASCII diagram generator (simple wrapper, archived)
 
 ---
 
