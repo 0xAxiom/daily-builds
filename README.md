@@ -12,6 +12,7 @@ Production-quality tools built 4x daily. Every build must meet a high bar:
 
 | Build | Description | Stack | Date |
 |-------|-------------|-------|------|
+| [hookforge](./builds/2026-02-04-hookforge/) | Uniswap V4 Hook Development Studio. Pattern library, code generation, static validation (12 pitfall patterns), gas estimation, web editor. Encodes months of V4 expertise. | Node.js, Express, Solidity patterns, Custom validator | 2026-02-04 |
 | [pr-review-stream](./builds/2026-02-03-pr-review-stream/) | Streaming AI code review pipeline. GitHub webhook → smart model routing → incremental review comments. Uses local LLMs (qwq, gemma3, deepseek). | Node.js, Hono, Ollama, Octokit | 2026-02-03 |
 | [gasflow](./builds/2026-02-03-gasflow/) | Predictive multi-chain gas optimizer. Aggregates gas across 4 chains, predicts optimal timing, route optimization for cost savings. | Node.js, Express, viem, React, Recharts, SQLite | 2026-02-03 |
 | [agent-pulse](./builds/2026-02-03-agent-pulse/) | Real-time AI agent activity monitor for Base. Track what agents do on-chain, categorize transactions, live WebSocket feed, beautiful dashboard. | Node.js, Express, WebSocket, React, viem | 2026-02-03 |
