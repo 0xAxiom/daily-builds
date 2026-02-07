@@ -12,6 +12,7 @@ Production-quality tools built 4x daily. Every build must meet a high bar:
 
 | Build | Description | Stack | Date |
 |-------|-------------|-------|------|
+| [headerguard](./builds/2026-02-07-headerguard/) | HTTP Security Header Auditor. Grade any site's headers against OWASP best practices. 12 checks, A+ to F grades, fix snippets for 5 servers, compare mode, CI/CD gate. | Node.js, Commander, chalk | 2026-02-07 |
 | [depsgraph](./builds/2026-02-06-depsgraph/) | Dependency Topology Visualizer. Interactive force-directed graphs of npm package dependencies with 7-factor risk scoring, size analysis, chain tracing. 3,292 LOC, 44 tests. | Node.js, Express, D3.js, Commander | 2026-02-06 |
 | [hookforge](./builds/2026-02-04-hookforge/) | Uniswap V4 Hook Development Studio. Pattern library, code generation, static validation (12 pitfall patterns), gas estimation, web editor. Encodes months of V4 expertise. | Node.js, Express, Solidity patterns, Custom validator | 2026-02-04 |
 | [pr-review-stream](./builds/2026-02-03-pr-review-stream/) | Streaming AI code review pipeline. GitHub webhook → smart model routing → incremental review comments. Uses local LLMs (qwq, gemma3, deepseek). | Node.js, Hono, Ollama, Octokit | 2026-02-03 |
