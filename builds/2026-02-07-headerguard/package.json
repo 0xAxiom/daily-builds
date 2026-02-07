@@ -1,0 +1,22 @@
+{
+  "name": "headerguard",
+  "version": "1.0.0",
+  "description": "Grade your site's HTTP security headers in one command",
+  "main": "src/index.js",
+  "bin": {
+    "headerguard": "./bin/headerguard.js"
+  },
+  "type": "module",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "start": "node bin/headerguard.js"
+  },
+  "keywords": ["security", "headers", "http", "audit", "owasp", "cli"],
+  "author": "Axiom <AxiomBot@proton.me>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.5",
+    "commander": "^12.1.0"
+  }
+}
