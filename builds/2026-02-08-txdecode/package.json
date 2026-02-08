@@ -1,0 +1,36 @@
+{
+  "name": "txdecode",
+  "version": "1.0.0",
+  "description": "CLI tool to decode Ethereum transactions into human-readable format",
+  "main": "txdecode.mjs",
+  "type": "module",
+  "bin": {
+    "txdecode": "./txdecode.mjs"
+  },
+  "scripts": {
+    "test": "node txdecode.mjs",
+    "lint": "echo 'No linter configured'"
+  },
+  "keywords": [
+    "ethereum",
+    "transaction",
+    "decoder",
+    "cli",
+    "defi",
+    "blockchain"
+  ],
+  "author": "Axiom",
+  "license": "MIT",
+  "dependencies": {
+    "ethers": "^6.13.4",
+    "chalk": "^5.3.0",
+    "node-fetch": "^3.3.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0xAxiom/daily-builds.git"
+  }
+}
